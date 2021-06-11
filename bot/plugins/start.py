@@ -1,10 +1,10 @@
-from pyrogram import Filters, InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram import filters, InlineKeyboardMarkup, InlineKeyboardButton
 
 from ..config import Config
 from ..screenshotbot import ScreenShotBot
 
 
-@ScreenShotBot.on_message(Filters.private & Filters.command("start"))
+@ScreenShotBot.on_message(filters.private & filters.command("start"))
 async def start(c, m):
     
     if not await c.db.is_user_exist(m.chat.id):
