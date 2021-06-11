@@ -2,7 +2,8 @@ import time
 import asyncio
 import datetime
 
-from pyrogram import filters, InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram import filters
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 from ..utils import is_url, get_duration, gen_ik_buttons
 from ..screenshotbot import ScreenShotBot
