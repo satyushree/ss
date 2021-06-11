@@ -1,6 +1,7 @@
 import asyncio
 
-from pyrogram import filters, ForceReply
+from pyrogram import filters
+from pyrogram.types import ForceReply
 
 from ..utils import sample_fn
 from ..screenshotbot import ScreenShotBot
