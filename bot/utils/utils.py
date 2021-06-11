@@ -9,7 +9,7 @@ import asyncio
 import datetime
 import traceback
 
-from pyrogram import InputMediaPhoto, InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram.types import InputMediaPhoto, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.errors import FloodWait
 
 from ..config import Config
