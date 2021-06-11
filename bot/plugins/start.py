@@ -1,4 +1,5 @@
-from pyrogram import filters, InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram import filters
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
 from ..config import Config
 from ..screenshotbot import ScreenShotBot
@@ -20,8 +21,8 @@ async def start(c, m):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('Source Code', url='https://github.com/prgofficial/SS-Bot'),
-                    InlineKeyboardButton('Support Group', url='https://t.me/moviesonlybotupdates')
+                    InlineKeyboardButton('Main Channel', url='https://t.me/All_Movie_Rockers'),
+                    InlineKeyboardButton('Creator', url='https://t.me/shreevish')
                 ],
             ]
         )
