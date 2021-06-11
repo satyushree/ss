@@ -2,14 +2,14 @@ import time
 import asyncio
 import datetime
 
-from pyrogram import Filters, InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram import filters, InlineKeyboardMarkup, InlineKeyboardButton
 
 from ..utils import is_url, get_duration, gen_ik_buttons
 from ..screenshotbot import ScreenShotBot
 from ..config import Config
 
 
-@ScreenShotBot.on_message(Filters.private & Filters.text & Filters.incoming & ~Filters.edited)
+@ScreenShotBot.on_message(filters.private & filters.text & filters.incoming & ~filters.edited)
 async def _(c, m):
     
     chat_id = m.chat.id
