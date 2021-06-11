@@ -1,10 +1,10 @@
-from pyrogram import Filters
+from pyrogram import filters
 
 from ..config import Config
 from ..screenshotbot import ScreenShotBot
 
 
-@ScreenShotBot.on_message(Filters.private &  Filters.command("set_watermark"))
+@ScreenShotBot.on_message(filters.private &  filters.command("set_watermark"))
 async def _(c, m):
     
     if not await c.db.is_user_exist(m.chat.id):
