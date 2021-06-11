@@ -1,13 +1,13 @@
 import asyncio
 
-from pyrogram import Filters, ForceReply
+from pyrogram import filters, ForceReply
 
 from ..config import Config
 from ..utils import trim_fn
 from ..screenshotbot import ScreenShotBot
 
 
-@ScreenShotBot.on_message(Filters.private & Filters.reply)
+@ScreenShotBot.on_message(filters.private & filters.reply)
 async def _(c, m):
     
     if not await c.db.is_user_exist(m.chat.id):
