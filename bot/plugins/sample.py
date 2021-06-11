@@ -1,6 +1,6 @@
 import asyncio
 
-from pyrogram import Filters
+from pyrogram import filters
 
 from ..utils import sample_fn
 from ..screenshotbot import ScreenShotBot
