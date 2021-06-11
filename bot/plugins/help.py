@@ -1,4 +1,4 @@
-from pyrogram import Filters, InlineKeyboardMarkup, InlineKeyboardButton
+from pyrogram import filters, InlineKeyboardMarkup, InlineKeyboardButton
 
 from ..screenshotbot import ScreenShotBot
 
@@ -16,7 +16,7 @@ __If issues persists contact @prgofficial.__"""
 
 
 
-@ScreenShotBot.on_message(Filters.private & Filters.command("help"))
+@ScreenShotBot.on_message(filters.private & filters.command("help"))
 async def help(c, m):
     
     await m.reply_text(
